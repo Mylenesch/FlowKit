@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: flowdb.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
 
   flowmachine:
     image: flowminder/flowmachine:${CONTAINER_TAG:-latest}
@@ -23,7 +23,7 @@ services:
       context: .
       dockerfile: flowmachine.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
 
   worked_examples:
     container_name: worked_examples
@@ -32,7 +32,7 @@ services:
       context: .
       dockerfile: examples.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
 
   flowapi:
     image: flowminder/flowapi:${CONTAINER_TAG:-latest}
@@ -40,7 +40,7 @@ services:
       context: .
       dockerfile: flowapi.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
 
   flowauth:
     image: flowminder/flowauth:${CONTAINER_TAG:-latest}
@@ -48,7 +48,7 @@ services:
       context: .
       dockerfile: flowauth.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
 
   flowetl:
     image: flowminder/flowetl:${CONTAINER_TAG:-latest}
@@ -56,4 +56,4 @@ services:
       context: .
       dockerfile: flowetl.Dockerfile
     environment:
-      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdrZnZ3OTE3Y2cyanJxZHM4dXN3cmoifQ.Jk2bRJD9c1m6wgslAM5ppg"
