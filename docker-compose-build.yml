@@ -14,12 +14,16 @@ services:
     build:
       context: .
       dockerfile: flowdb.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
 
   flowmachine:
     image: flowminder/flowmachine:${CONTAINER_TAG:-latest}
     build:
       context: .
       dockerfile: flowmachine.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
 
   worked_examples:
     container_name: worked_examples
@@ -27,21 +31,29 @@ services:
     build:
       context: .
       dockerfile: examples.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
 
   flowapi:
     image: flowminder/flowapi:${CONTAINER_TAG:-latest}
     build:
       context: .
       dockerfile: flowapi.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
 
   flowauth:
     image: flowminder/flowauth:${CONTAINER_TAG:-latest}
     build:
       context: .
       dockerfile: flowauth.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
 
   flowetl:
     image: flowminder/flowetl:${CONTAINER_TAG:-latest}
     build:
       context: .
       dockerfile: flowetl.Dockerfile
+    environment:
+      MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoibXlsZW5lc2NoIiwiYSI6ImNscWdmbGk2eDEyYW8ybG80NnN2OHJxNTcifQ.KtT1U0ElL8PRLzugtf6Xew"
